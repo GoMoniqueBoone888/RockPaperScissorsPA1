@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="banner">
+    <div class="title">
+      <h1>Rock Paper Scissors</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="images">
+      <img src="images/rock.jpg" height="200px" />
+      <img src="images/paper.jpg" height="200px" />
+      <img src="images/scissors.jpg" height="200px" />
+    </div>
+    <!-- Your code here -->
+
+    <form action="https://rockpaperscissors.ctkraleigh.com/validate" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" must_be_at_least_3_and_less_than_25_characters required>
+
+      <label for="Choice">Choose Your Weapon:</label>
+      <select id="Choice" name="user_choice" required>
+        <optgroup label="weapon">
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option>
+
+        </optgroup>
+      </select>
+
+      <label for="verification_number">Verification Number</label>
+      <input type="range" id="verification_number" name="verification_number" min="32" max="64">
+
+
+      <label for="opponet">Play Against:</label>
+      <fieldset>
+        <input type="radio">Human
+        <input type="radio">Computer
+      </fieldset>
+
+      <fieldset>
+        <label for="im_human">I am Human</label>
+        <input type="checkbox" id="im_human" name="im_human" required>
+      </fieldset>
+
+      <input type="submit">
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+  </div>
+</body>
+
+</html>
